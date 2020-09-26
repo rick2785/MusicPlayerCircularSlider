@@ -11,6 +11,10 @@
 		09714D62251E8B8600ADE3BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09714D61251E8B8600ADE3BC /* ContentView.swift */; };
 		09714D64251E8B8800ADE3BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09714D63251E8B8800ADE3BC /* Assets.xcassets */; };
 		09714D67251E8B8800ADE3BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09714D66251E8B8800ADE3BC /* Preview Assets.xcassets */; };
+		09714D73251E8BE700ADE3BC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09714D72251E8BE700ADE3BC /* Home.swift */; };
+		09714D77251E8BF500ADE3BC /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09714D76251E8BF500ADE3BC /* Album.swift */; };
+		09714D7A251E8C0100ADE3BC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09714D79251E8C0100ADE3BC /* HomeViewModel.swift */; };
+		09714D7E251EAB9E00ADE3BC /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09714D7D251EAB9E00ADE3BC /* audio.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		09714D63251E8B8800ADE3BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09714D66251E8B8800ADE3BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09714D68251E8B8800ADE3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09714D72251E8BE700ADE3BC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		09714D76251E8BF500ADE3BC /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		09714D79251E8C0100ADE3BC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		09714D7D251EAB9E00ADE3BC /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 		09714D53251E8B8600ADE3BC = {
 			isa = PBXGroup;
 			children = (
+				09714D7D251EAB9E00ADE3BC /* audio.mp3 */,
 				09714D5E251E8B8600ADE3BC /* MusicPlayerCircularSlider */,
 				09714D5D251E8B8600ADE3BC /* Products */,
 			);
@@ -52,6 +61,9 @@
 		09714D5E251E8B8600ADE3BC /* MusicPlayerCircularSlider */ = {
 			isa = PBXGroup;
 			children = (
+				09714D71251E8BD200ADE3BC /* ViewModel */,
+				09714D70251E8BCA00ADE3BC /* Model */,
+				09714D6F251E8BC400ADE3BC /* View */,
 				09714D5F251E8B8600ADE3BC /* MusicPlayerCircularSliderApp.swift */,
 				09714D61251E8B8600ADE3BC /* ContentView.swift */,
 				09714D63251E8B8800ADE3BC /* Assets.xcassets */,
@@ -67,6 +79,30 @@
 				09714D66251E8B8800ADE3BC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09714D6F251E8BC400ADE3BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09714D72251E8BE700ADE3BC /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09714D70251E8BCA00ADE3BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09714D76251E8BF500ADE3BC /* Album.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09714D71251E8BD200ADE3BC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				09714D79251E8C0100ADE3BC /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09714D67251E8B8800ADE3BC /* Preview Assets.xcassets in Resources */,
+				09714D7E251EAB9E00ADE3BC /* audio.mp3 in Resources */,
 				09714D64251E8B8800ADE3BC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +176,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				09714D62251E8B8600ADE3BC /* ContentView.swift in Sources */,
+				09714D73251E8BE700ADE3BC /* Home.swift in Sources */,
 				09714D60251E8B8600ADE3BC /* MusicPlayerCircularSliderApp.swift in Sources */,
+				09714D7A251E8C0100ADE3BC /* HomeViewModel.swift in Sources */,
+				09714D77251E8BF500ADE3BC /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
